@@ -1,4 +1,4 @@
-let comments = ["comment 1", "comment 2", "comment 3"];
+let comments = [];
 // let userComment;
 
 function finishTask(sender) {
@@ -40,7 +40,7 @@ function generateComments() {
   let optionsString = "";
   for (let comment of comments) {
     // optionsString += `<div><input type="checkbox" onchange="finishTask(this)"><span>${comment}</span><button onchange="deleteComment()">Delete</button></div>`;
-    optionsString += `<div><span>${comment}</span><button onchange="deleteComment()">Delete</button></div>`;
+    optionsString += `<div><span>${comment}</span></div>`;
   }
 
   document.getElementById("container").innerHTML = optionsString;
